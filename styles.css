@@ -1,0 +1,175 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Reset default styles and apply a universal font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Set global body styles */
+body {
+    line-height: 1.6;
+}
+
+/* Style the main heading */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+/* Center the form */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/* Style the input field */
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style the search button */
+#search-button {
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Container for search results */
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual search result box */
+.search-result {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Style for images in search results */
+.search-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Hover effect to slightly fade images */
+.search-result:hover img {
+    opacity: 0.8;
+}
+
+/* Style for image links */
+.search-result a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+/* Style for the "Show More" button */
+#show-more-button {
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive styles for tablets */
+@media screen and (max-width: 768px) {
+    .search-result {
+        width: 45%;
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 480px) {
+    .search-result {
+        width: 100%;
+    }
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #222; /* Dark background */
+    color: white; /* Text color */
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #222; /* Dark background */
+    color: white; /* General text color */
+}
+
+/* Style for search result descriptions in dark mode */
+.dark-mode .search-result a {
+    color: white; /* Ensure description text is visible */
+}
+
+/* Dark Mode Button Styling */
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Ensure the text inside the search box is visible */
+.dark-mode #search-input {
+    color: white; /* Text color in search box */
+    background-color: #333; /* Dark background for input */
+}
+
+.dark-mode input, 
+.dark-mode #search-button {
+    background-color: #333; 
+    color: white; /* Text color for the search input */
+    border: 1px solid white;
+}
+
+/* Ensure search result description is white and visible */
+.dark-mode .search-result a {
+    color: white; /* White text for descriptions */
+    text-decoration: none; /* Optional: removes underline */
+}
